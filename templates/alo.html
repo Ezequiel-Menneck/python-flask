@@ -8,5 +8,15 @@
 </head>
 <body style="padding: 0; margin: 0">
   <h1 style="background-color: cadetblue;">Jinja2 for html</h1>
+  <h1 style="background-color: chartreuse;">{{ n }}</h1>
+  <table>
+    {% for prod in p %}
+    <tr>
+      <td>{{ prod.nome }}</td>
+      <td>{{ prod.preço }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
 </body>
 </html>

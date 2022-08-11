@@ -3,6 +3,11 @@ app = Flask("project")
 
 @app.route("/")
 def hello():
-  return render_template("alo.html"), 200
+  name = "robson"
+  products = [
+    {"nome": "Ração", "preço": 500},
+    {"nome": "Ração", "preço": 500},
+  ]
+  return render_template("alo.html", n=name, p = products), 200
 
 app.run()
